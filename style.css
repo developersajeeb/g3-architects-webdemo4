@@ -322,15 +322,55 @@ footer {
     font-weight: 400;
 }
 
+/* -------------------
+Medium Device Style
+---------------------- */
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    .sizing {
+        width: 90%;
+    }
+
+    .four-img img, .service-img img, .intro {
+        width: 100%;
+    }
+
+    section.features, .our-service {
+        flex-direction: column;
+    }
+
+    .facts-items {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .service-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .company {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-around;
+    }
+
+    .years {
+        width: 153px;
+        padding: 35px;
+        left: 0;
+        top: -75px;
+        margin: 0 auto;
+        border-radius: 6px;
+    }
+}
 
 /* ----------------------
 Mobile Responsive Styles
 ------------------------- */
 
 @media screen and (max-width: 576px) {
-    nav {
-        display: none;
-    }
 
     .sizing {
         width: 90%;
@@ -340,6 +380,25 @@ Mobile Responsive Styles
         font-size: 36px;
     }
 
+    section.features, .our-service {
+        flex-direction: column;
+    }
+
+    .four-img img, .service-img img {
+        width: 100%;
+    }
+
+    /* Nav bar styles */
+
+    nav h2 {
+        font-size: 24px;
+    }
+
+    .menu-item ul {
+        gap: 0px;
+        flex-direction: column;
+    }
+
     /* Header Section */
     .intro h1 {
         font-size: 45px;
@@ -347,28 +406,12 @@ Mobile Responsive Styles
 
     /* Features Section */
 
-    section.features {
-        flex-direction: column;
-    }
-
     .four-img {
         grid-template-columns: repeat(1, 1fr);
         margin: 0 auto;
     }
 
-    .four-img img {
-        width: 100%;
-    }
-
     /* Service Section */
-
-    .our-service {
-        flex-direction: column;
-    }
-
-    .service-img img {
-        width: 100%;
-    }
 
     .years {
         width: 100%;
