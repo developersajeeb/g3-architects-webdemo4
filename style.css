@@ -400,6 +400,14 @@ Mobile Responsive Styles
     }
 
     /* Header Section */
+    header {
+        padding-top: 50px;
+    }
+    
+    .intro{
+        width: 100%;
+    }
+
     .intro h1 {
         font-size: 45px;
     }
