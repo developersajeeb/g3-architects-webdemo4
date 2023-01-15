@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
@@ -8,7 +8,7 @@ body {
     box-sizing: border-box;
 }
 
-.sizing{
+.sizing {
     max-width: 1150px;
     width: 100%;
     margin: 0 auto;
@@ -34,14 +34,14 @@ p {
 
 button {
     padding: 18px 22px;
-    border: navajowhite;
+    border: none;
     background-color: #FF900E;
     border-radius: 6px;
     margin-top: 30px;
     cursor: pointer;
 }
 
-button a{
+button a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 600;
@@ -55,7 +55,7 @@ nav {
     background: rgba(255, 144, 14, 0.1);
 }
 
-nav > div {
+nav>div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -138,6 +138,7 @@ section.features {
     font-weight: 400;
     color: #727272;
 }
+
 .feature-info span:nth-child(2) {
     color: #FF900E;
 }
@@ -238,4 +239,163 @@ section.facts-section {
     background: #fff4e6;
     box-shadow: 0px 4px 30px rgb(0 0 0 / 11%);
     margin-top: -8px;
+}
+
+/* -----------------------
+Sponsors Section Styles
+-------------------------- */
+
+section.sponsors {
+    margin-bottom: 100px;
+}
+
+.sponsors-intro h2 {
+    margin-bottom: 20px;
+}
+
+.company {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsors-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.company img {
+    filter: grayscale(100%);
+    width: 135px;
+}
+
+/* ------------------
+CTA Section Design
+--------------------- */
+
+.subscribe {
+    margin-top: 40px;
+}
+
+section.cta-section {
+    background-color: #FFF4E6;
+    border-radius: 8px;
+    text-align: center;
+    padding: 140px 0;
+    margin-bottom: 100px;
+}
+
+.subscribe input[type=email] {
+    padding: 18px 22px;
+    border: none;
+    outline: none;
+    margin: -5px;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.subscribe input[type=button] {
+    border: none;
+    padding: 18px 22px;
+    background-color: #FF900E;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 0px 6px 6px 0px;
+    cursor: pointer;
+}
+
+/* ------------------
+Footer Style
+--------------------- */
+
+footer {
+    background-color: #FFF4E7;
+    border-radius: 6px;
+}
+
+.footer-style {
+    padding: 35px 0;
+    text-align: center;
+    color: #424242;
+    margin-bottom: 100px;
+}
+
+.footer-style h4 {
+    font-weight: 400;
+}
+
+
+/* ----------------------
+Mobile Responsive Styles
+------------------------- */
+
+@media screen and (max-width: 576px) {
+    nav {
+        display: none;
+    }
+
+    .sizing {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    /* Header Section */
+    .intro h1 {
+        font-size: 45px;
+    }
+
+    /* Features Section */
+
+    section.features {
+        flex-direction: column;
+    }
+
+    .four-img {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+
+    .four-img img {
+        width: 100%;
+    }
+
+    /* Service Section */
+
+    .our-service {
+        flex-direction: column;
+    }
+
+    .service-img img {
+        width: 100%;
+    }
+
+    .years {
+        width: 100%;
+        padding: 35px 0;
+        left: 0;
+        top: 0;
+        border-radius: 6px;
+    }
+
+    /* Facts-item Section */
+
+    .facts-items {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Sponsors Section */
+
+    .company {
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+
+    /* CTA Section */
+
+    section.cta-section {
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
 }
